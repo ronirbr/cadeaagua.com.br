@@ -1,0 +1,33 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: roni
+  password: 123 
+  host: postgres 
+  port: 5432
+
+development:
+  <<: *default
+  database: cadeaagua_development
+
+test:
+  <<: *default
+  database: cadeaagua_test
+
+production:
+  primary:
+    <<: *default
+    database: cadeaagua_production
+  cache:
+    <<: *default
+    database: cadeaagua_production_cache
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *default
+    database: cadeaagua_production_queue
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *default
+    database: cadeaagua_production_cable
+    migrations_paths: db/cable_migrate
