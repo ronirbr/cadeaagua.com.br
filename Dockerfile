@@ -8,7 +8,8 @@ RUN apt-get update -qq && apt-get install -y \
     build-essential \
     libpq-dev \
     nodejs \
-    npm
+    npm \
+    yarn
 
 # Create app directory
 RUN mkdir /app

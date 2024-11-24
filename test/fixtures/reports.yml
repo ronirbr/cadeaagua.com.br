@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  street: MyString
+  water_out_at: 2024-11-24 20:16:18
+  water_back_at: 2024-11-24 20:16:18
+  status: MyString
+  user_id: 1
+
+two:
+  street: MyString
+  water_out_at: 2024-11-24 20:16:18
+  water_back_at: 2024-11-24 20:16:18
+  status: MyString
+  user_id: 1

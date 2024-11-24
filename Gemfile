@@ -16,7 +16,16 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+# Postgres adapter
 gem "pg"
+# For user authentication, if necessary.
+gem "devise"
+# For street coordinates if necessary.
+gem "geocoder"
+# For interactive maps (or Google Maps).
+gem "mapbox-gl-rails"
+# For styling.
+gem "tailwindcss-rails"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
